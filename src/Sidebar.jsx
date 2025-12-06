@@ -112,6 +112,8 @@ import "./Sidebar.css";
 import { useContext, useEffect } from "react";
 import { MyContext } from "./MyContext.jsx";
 import { v1 as uuidv1 } from "uuid";
+import logo from "./assets/blacklogo.png"; // 👈 adjust relative path if needed
+
 
 // ✅ Use your deployed backend URL on Render
 const API_BASE_URL = "https://sangvichatgpt.onrender.com/api";
@@ -194,14 +196,8 @@ function Sidebar() {
   return (
     <section className="sidebar">
       <button onClick={createNewChat}>
-        <img
-          src="src/assets/blacklogo.png"
-          alt="gpt logo"
-          className="logo"
-        />
-        <span>
-          <i className="fa-solid fa-pen-to-square"></i>
-        </span>
+         <img src={logo} alt="gpt logo" className="logo" />
+        <span><i className="fa-solid fa-pen-to-square"></i></span>
       </button>
 
       <ul className="history">
