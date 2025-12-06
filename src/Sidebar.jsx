@@ -112,7 +112,11 @@ import "./Sidebar.css";
 import { useContext, useEffect } from "react";
 import { MyContext } from "./MyContext.jsx";
 import { v1 as uuidv1 } from "uuid";
-import logo from "./assets/blacklogo.png"; // 👈 adjust relative path if needed
+
+
+//  ADD THIS LINE
+import blackLogo from "./assets/blacklogo.png";
+
 
 
 // ✅ Use your deployed backend URL on Render
@@ -196,7 +200,7 @@ function Sidebar() {
   return (
     <section className="sidebar">
       <button onClick={createNewChat}>
-         <img src="/blacklogo.png" alt="gpt logo" className="logo" />
+         <img src={blackLogo} alt="gpt logo" className="logo" />
   <span><i className="fa-solid fa-pen-to-square"></i></span>
       </button>
 
