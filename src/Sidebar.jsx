@@ -1,4 +1,4 @@
-// /* eslint-disable no-unused-vars */
+/* eslint-disable no-unused-vars */
 // import "./Sidebar.css";
 // import { useContext, useEffect } from "react";
 // import { MyContext } from "./MyContext.jsx";
@@ -72,8 +72,10 @@
 //     return (
 //         <section className="sidebar">
 //             <button onClick={createNewChat}>
-//                 <img src="src/assets/blacklogo.png" alt="gpt logo" className="logo"></img>
-//                 <span><i className="fa-solid fa-pen-to-square"></i></span>
+//                 <img src={blackLogo} alt="gpt logo" className="logo" />
+//   <span>
+//     <i className="fa-solid fa-pen-to-square"></i>
+//   </span>
 //             </button>
 
 
@@ -201,7 +203,9 @@ function Sidebar() {
     <section className="sidebar">
       <button onClick={createNewChat}>
          <img src={blackLogo} alt="gpt logo" className="logo" />
-  <span><i className="fa-solid fa-pen-to-square"></i></span>
+  <span>
+    <i className="fa-solid fa-pen-to-square"></i>
+  </span>
       </button>
 
       <ul className="history">
